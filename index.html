@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enzo Rodrigues | AI Operations & Content Specialist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            900: '#0a0d14',
+                            800: '#111827',
+                            700: '#1f2937',
+                            600: '#374151',
+                        },
+                        neon: {
+                            cyan: '#06b6d4',
+                            emerald: '#10b981',
+                            blue: '#3b82f6'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome for clean icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #0a0d14;
+            color: #94a3b8;
+            font-family: 'Inter', sans-serif;
+        }
+        .terminal-glow {
+            box-shadow: 0 0 25px rgba(6, 182, 212, 0.15);
+        }
+        .terminal-glow-emerald {
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.15);
+        }
+        .border-tech {
+            border-color: rgba(6, 182, 212, 0.2);
+        }
+        .card-hover {
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-3px);
+            border-color: rgba(6, 182, 212, 0.6);
+        }
+    </style>
+</head>
+<body class="bg-dark-900 text-slate-300 antialiased selection:bg-cyan-500 selection:text-dark-900">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-dark-900/90 backdrop-blur-sm border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#hero" class="font-mono text-cyan-400 font-bold tracking-wider text-sm sm:text-base flex items-center gap-2">
+                <span class="text-emerald-400">&gt;</span> enzo.rodrigues_
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#experience" class="hover:text-cyan-400 transition-colors">Experience</a>
+                <a href="#skills" class="hover:text-cyan-400 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-cyan-400 transition-colors">Portfolio</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </nav>
+            <div>
+                <a href="mailto:enzoferrari2412@hotmail.com" class="bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 px-4 py-2 rounded-lg text-xs sm:text-sm font-medium transition-all flex items-center gap-2">
+                    <i class="fa-regular fa-envelope"></i> Get in Touch
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-[85vh] flex items-center justify-center px-6 py-20 relative overflow-hidden">
+        <!-- Subtle grid background -->
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f293710_1px,transparent_1px),linear-gradient(to_bottom,#1f293710_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono mb-6 terminal-glow-emerald">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Available for Remote Opportunities (USD / Global)
+            </div>
+
+            <h1 class="text-4xl sm:text-6xl font-bold text-slate-100 tracking-tight mb-4">
+                Enzo Rodrigues de Oliveira Silva
+            </h1>
+            
+            <p class="font-mono text-cyan-400 text-lg sm:text-xl mb-6">
+                AI Operations &amp; Content Specialist
+            </p>
+
+            <p class="max-w-2xl mx-auto text-slate-400 text-base sm:text-lg mb-10 leading-relaxed">
+                Bridging human judgment and Generative AI workflows. Specialized in online community management, Trust &amp; Safety, structured problem-solving, and AI-assisted creative operations.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://linkedin.com/in/enzo-rodrigues-de-oliveira-silva-8386392b0" target="_blank" rel="noopener" class="bg-cyan-500 hover:bg-cyan-400 text-dark-900 font-semibold px-6 py-3 rounded-lg text-sm transition-all flex items-center gap-2 shadow-lg shadow-cyan-500/20">
+                    <i class="fa-brands fa-linkedin-in text-base"></i> Connect on LinkedIn
+                </a>
+                <a href="#projects" class="bg-dark-800 hover:bg-dark-700 text-slate-200 border border-slate-700 font-semibold px-6 py-3 rounded-lg text-sm transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-code-branch text-cyan-400"></i> View Portfolio &amp; Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 border-t border-slate-800/60 bg-dark-800/30">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex items-center gap-3 mb-8">
+                <span class="font-mono text-cyan-400 text-lg">01.</span>
+                <h2 class="text-2xl font-bold text-slate-100 uppercase tracking-wide">About Me</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 items-start">
+                <div class="md:col-span-2 space-y-4 text-slate-300 leading-relaxed text-sm sm:text-base">
+                    <p>
+                        I am a Technology student (Systems Analysis and Development at UEPB) and digital professional based in Brazil, focused on operational excellence in AI, content moderation, and digital media production.
+                    </p>
+                    <p>
+                        My background combines hands-on management of online communities (enforcing guidelines, handling edge cases, and mitigating risks) with daily utilization of Generative AI tools like ChatGPT, Claude, and Gemini to streamline pipelines and automate workflows.
+                    </p>
+                    <p>
+                        I excel in fast-paced, structured environments where precision, clear documentation, and autonomous problem-solving are paramount.
+                    </p>
+                </div>
+
+                <div class="bg-dark-800 border border-slate-700/80 p-5 rounded-xl terminal-glow">
+                    <h3 class="font-mono text-cyan-400 text-sm mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-terminal"></i> Quick Facts
+                    </h3>
+                    <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+                        <li class="flex items-center justify-between border-b border-slate-700/50 pb-2">
+                            <span class="text-slate-400">Location:</span>
+                            <span class="font-medium">João Pessoa, PB, Brazil</span>
+                        </li>
+                        <li class="flex items-center justify-between border-b border-slate-700/50 pb-2">
+                            <span class="text-slate-400">English:</span>
+                            <span class="font-medium text-cyan-400">Advanced (B2/C1)</span>
+                        </li>
+                        <li class="flex items-center justify-between border-b border-slate-700/50 pb-2">
+                            <span class="text-slate-400">Availability:</span>
+                            <span class="font-medium text-emerald-400">100% Remote / Contractor</span>
+                        </li>
+                        <li class="flex items-center justify-between">
+                            <span class="text-slate-400">Degree:</span>
+                            <span class="font-medium">Systems Analysis (2027)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-6 border-t border-slate-800/60">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex items-center gap-3 mb-12">
+                <span class="font-mono text-cyan-400 text-lg">02.</span>
+                <h2 class="text-2xl font-bold text-slate-100 uppercase tracking-wide">Professional Experience</h2>
+            </div>
+
+            <div class="space-y-8 relative border-l border-slate-800 ml-3 pl-6 sm:pl-8">
+                
+                <!-- Job 1 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31.5px] sm:-left-[39.5px] top-1.5 w-4 h-4 rounded-full bg-cyan-500 border-4 border-dark-900"></div>
+                    <div class="bg-dark-800/80 border border-slate-700/70 p-6 rounded-xl card-hover">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-3">
+                            <h3 class="text-lg font-bold text-slate-100">Community Manager &amp; Moderator</h3>
+                            <span class="font-mono text-xs text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full w-fit mt-1 sm:mt-0">Aug 2026 – Present</span>
+                        </div>
+                        <p class="text-xs text-slate-400 font-mono mb-4">Discord / Online Communities</p>
+                        <ul class="space-y-2 text-sm text-slate-300">
+                            <li class="flex items-start gap-2">
+                                <span class="text-cyan-400 mt-1">›</span> Manage and moderate digital communities, ensuring compliance with strict safety guidelines and rules.
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-cyan-400 mt-1">›</span> Evaluate edge cases, resolve interpersonal conflicts, and handle escalations with structured judgment.
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-cyan-400 mt-1">›</span> Utilize AI assistance to draft clear announcements, automate administrative support tasks, and organize queues.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31.5px] sm:-left-[39.5px] top-1.5 w-4 h-4 rounded-full bg-slate-600 border-4 border-dark-900 group-hover:bg-cyan-500 transition-colors"></div>
+                    <div class="bg-dark-800/80 border border-slate-700/70 p-6 rounded-xl card-hover">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-3">
+                            <h3 class="text-lg font-bold text-slate-100">Freelance Video Editor &amp; Content Producer</h3>
+                            <span class="font-mono text-xs text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full w-fit mt-1 sm:mt-0">Jun 2026 – Present</span>
+                        </div>
+                        <p class="text-xs text-slate-400 font-mono mb-4">EzilBR / Independent</p>
+                        <ul class="space-y-2 text-sm text-slate-300">
+                            <li class="flex items-start gap-2">
+                                <span class="text-cyan-400 mt-1">›</span> Produced digital content and edited videos utilizing professional tools (CapCut PC, DaVinci Resolve, OBS Studio).
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-cyan-400 mt-1">›</span> Integrated Generative AI tools (ChatGPT, Claude) daily into editorial workflows to parse briefs and structure pipelines.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31.5px] sm:-left-[39.5px] top-1.5 w-4 h-4 rounded-full bg-slate-600 border-4 border-dark-900 group-hover:bg-cyan-500 transition-colors"></div>
+                    <div class="bg-dark-800/80 border border-slate-700/70 p-6 rounded-xl card-hover">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-3">
+                            <h3 class="text-lg font-bold text-slate-100">Real Estate Agent</h3>
+                            <span class="font-mono text-xs text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full w-fit mt-1 sm:mt-0">Jan 2026 – Present</span>
+                        </div>
+                        <p class="text-xs text-slate-400 font-mono mb-4">João Pessoa, PB</p>
+                        <ul class="space-y-2 text-sm text-slate-300">
+                            <li class="flex items-start gap-2">
+                                <span class="text-cyan-400 mt-1">›</span> Operated in structured, high-volume environments requiring strict adherence to legal compliance and documentation.
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-cyan-400 mt-1">›</span> Qualified leads, organized document pipelines, and communicated clearly with clients and stakeholders.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31.5px] sm:-left-[39.5px] top-1.5 w-4 h-4 rounded-full bg-slate-600 border-4 border-dark-900 group-hover:bg-cyan-500 transition-colors"></div>
+                    <div class="bg-dark-800/80 border border-slate-700/70 p-6 rounded-xl card-hover">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-3">
+                            <h3 class="text-lg font-bold text-slate-100">Customer Service Representative</h3>
+                            <span class="font-mono text-xs text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full w-fit mt-1 sm:mt-0">Dec 2023 – Apr 2024</span>
+                        </div>
+                        <p class="text-xs text-slate-400 font-mono mb-4">Burger King, Manaíra Shopping</p>
+                        <ul class="space-y-2 text-sm text-slate-300">
+                            <li class="flex items-start gap-2">
+                                <span class="text-cyan-400 mt-1">›</span> Maintained organized service queues and operational workflows in a fast-paced retail environment.
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-cyan-400 mt-1">›</span> Followed standard operating procedures (SOPs) precisely under high pressure.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6 border-t border-slate-800/60 bg-dark-800/30">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex items-center gap-3 mb-12">
+                <span class="font-mono text-cyan-400 text-lg">03.</span>
+                <h2 class="text-2xl font-bold text-slate-100 uppercase tracking-wide">Core Competencies</h2>
+            </div>
+
+            <div class="grid sm:grid-cols-3 gap-6">
+                
+                <!-- Skill Category 1 -->
+                <div class="bg-dark-800 border border-slate-700/80 p-6 rounded-xl">
+                    <div class="text-cyan-400 text-xl mb-4">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-100 mb-3">AI Operations &amp; Tools</h3>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li>• ChatGPT, Claude, Gemini</li>
+                        <li>• Prompt Formulation &amp; Parsing</li>
+                        <li>• Workflow Automation</li>
+                        <li>• Data Classification &amp; Tagging</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 2 -->
+                <div class="bg-dark-800 border border-slate-700/80 p-6 rounded-xl">
+                    <div class="text-emerald-400 text-xl mb-4">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-100 mb-3">Content Moderation</h3>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li>• Trust &amp; Safety Frameworks</li>
+                        <li>• Community Management</li>
+                        <li>• Rule Enforcement</li>
+                        <li>• Conflict Resolution</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 3 -->
+                <div class="bg-dark-800 border border-slate-700/80 p-6 rounded-xl">
+                    <div class="text-blue-400 text-xl mb-4">
+                        <i class="fa-solid fa-clapperboard"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-100 mb-3">Media Production</h3>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li>• CapCut PC &amp; DaVinci Resolve</li>
+                        <li>• Sony Vegas &amp; OBS Studio</li>
+                        <li>• Content Pipeline Structuring</li>
+                        <li>• Digital Asset Organization</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio / Links Section -->
+    <section id="projects" class="py-20 px-6 border-t border-slate-800/60">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex items-center gap-3 mb-12">
+                <span class="font-mono text-cyan-400 text-lg">04.</span>
+                <h2 class="text-2xl font-bold text-slate-100 uppercase tracking-wide">Portfolio &amp; Professional Links</h2>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-6">
+                
+                <a href="https://linkedin.com/in/enzo-rodrigues-de-oliveira-silva-8386392b0" target="_blank" rel="noopener" class="bg-dark-800 border border-slate-700/80 p-6 rounded-xl card-hover block group">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="font-bold text-slate-100 group-hover:text-cyan-400 transition-colors flex items-center gap-2">
+                            <i class="fa-brands fa-linkedin text-cyan-400"></i> LinkedIn Profile
+                        </h3>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-slate-500 text-xs"></i>
+                    </div>
+                    <p class="text-sm text-slate-400">
+                        Connect with me and check my complete professional history, recommendations, and updates.
+                    </p>
+                </a>
+
+                <div class="bg-dark-800 border border-slate-700/80 p-6 rounded-xl">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="font-bold text-slate-100 flex items-center gap-2">
+                            <i class="fa-solid fa-file-lines text-emerald-400"></i> AI Workflows &amp; Documentation
+                        </h3>
+                        <span class="font-mono text-xs text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">Active</span>
+                    </div>
+                    <p class="text-sm text-slate-400">
+                        Structured prompt templates, creative pipeline checklists, and operational documentation available upon request.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 border-t border-slate-800/60 bg-dark-800/30 text-center">
+        <div class="max-w-2xl mx-auto">
+            <span class="font-mono text-cyan-400 text-xs uppercase tracking-widest block mb-3">05. What's Next?</span>
+            <h2 class="text-3xl font-bold text-slate-100 mb-4">Get In Touch</h2>
+            <p class="text-slate-400 mb-8 text-sm sm:text-base">
+                I am currently open to remote opportunities in AI Operations, Content Moderation, and Creative Operations. Let's connect!
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="mailto:enzoferrari2412@hotmail.com" class="bg-cyan-500 hover:bg-cyan-400 text-dark-900 font-semibold px-8 py-3 rounded-lg text-sm transition-all shadow-lg shadow-cyan-500/20">
+                    <i class="fa-regular fa-envelope mr-2"></i> enzoferrari2412@hotmail.com
+                </a>
+                <a href="https://linkedin.com/in/enzo-rodrigues-de-oliveira-silva-8386392b0" target="_blank" rel="noopener" class="bg-dark-800 hover:bg-dark-700 text-slate-200 border border-slate-700 font-semibold px-8 py-3 rounded-lg text-sm transition-all">
+                    <i class="fa-brands fa-linkedin-in mr-2"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-800 text-center text-xs font-mono text-slate-500">
+        <p>© 2026 Enzo Rodrigues de Oliveira Silva. Designed for GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
